@@ -1,0 +1,20 @@
+/* Lindy Operation — design tokens
+   Ported verbatim from the Claude Design brand book + landing prototypes.
+   Navy leads. Warm neutrals. Ember + Gold are the two restrained accents. */
+:root {
+  --ink: #0e141c;
+  --pine: #1b3a5e;      /* "Navy" — primary */
+  --pineDk: #0f2238;    /* "Navy Deep" */
+  --slate: #46524e;
+  --mist: #9aa39e;
+  --paper: #f3f0e9;
+  --bone: #fbfaf6;
+  --line: #0e171418;
+  --ember: #ec5a2a;
+  --gold: #c9a24b;
+
+  --sans: 'Geist', system-ui, -apple-system, sans-serif;
+  --mono: 'Geist Mono', ui-monospace, monospace;
+
+  --maxw: 1240px;
+}

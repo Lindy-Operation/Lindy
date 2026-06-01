@@ -1,0 +1,68 @@
+/* 전자공시 — Electronic Disclosures page.
+   Wrapped in .lp so it inherits the landing's dark theme tokens. */
+
+.disc { display: flex; flex-direction: column; min-height: 100vh; }
+.disc-bg {
+  position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  background: radial-gradient(58vw 40vw at 82% -12%, rgba(236, 90, 42, 0.16), transparent 62%);
+}
+.disc > *:not(.disc-bg) { position: relative; z-index: 1; }
+
+/* nav */
+.disc-nav {
+  display: flex; align-items: center; justify-content: space-between;
+  width: 100%; max-width: 960px; margin: 0 auto; padding: 28px 40px;
+  border-bottom: 1px solid var(--hair-soft);
+}
+.disc-nav .brand { display: flex; align-items: center; gap: 11px; }
+.disc-nav .brand .mark { width: 24px; height: 24px; color: var(--flame); }
+.disc-nav .brand .name { font-family: var(--display); font-weight: 600; font-size: 22px; letter-spacing: -0.03em; }
+.disc-back { font-size: 12.5px; letter-spacing: 0.06em; color: var(--paper-dim); transition: color 0.2s ease; }
+.disc-back:hover { color: var(--paper); }
+
+/* body */
+.disc-main { width: 100%; max-width: 960px; margin: 0 auto; padding: 64px 40px 120px; flex: 1; }
+.disc-kicker {
+  font-family: var(--mono); font-size: 12px; letter-spacing: 0.22em;
+  text-transform: uppercase; color: var(--paper-faint);
+}
+.disc-main h1 {
+  font-family: var(--display); font-weight: 600;
+  font-size: clamp(48px, 8vw, 92px); letter-spacing: -0.05em; line-height: 0.95;
+  margin: 18px 0 0;
+}
+.disc-note {
+  font-size: 15.5px; line-height: 1.75; color: var(--paper-dim);
+  max-width: 700px; margin-top: 36px; padding: 26px 28px;
+  border: 1px solid var(--hair); border-left: 2px solid var(--ember);
+  border-radius: 12px; background: var(--surface);
+}
+
+/* notices ledger */
+.disc-ledger { margin-top: 60px; }
+.disc-head, .disc-row {
+  display: grid; grid-template-columns: 170px 1fr 120px;
+  gap: 24px; align-items: center; padding: 18px 6px;
+}
+.disc-head {
+  font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--paper-faint);
+  border-bottom: 1px solid var(--hair);
+}
+.disc-row { border-bottom: 1px solid var(--hair-soft); }
+.disc-row .dt { font-family: var(--mono); font-size: 13px; color: var(--paper-dim); }
+.disc-row .ti { font-size: 17px; }
+.disc-row .kd { font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--paper-faint); }
+.disc-empty {
+  padding: 64px 6px; text-align: center; border-bottom: 1px solid var(--hair-soft);
+  font-family: var(--mono); font-size: 13.5px; letter-spacing: 0.04em; color: var(--paper-faint);
+}
+
+.disc-foot { margin-top: 44px; font-size: 12.5px; letter-spacing: 0.06em; color: var(--paper-faint); }
+.disc-foot a { color: var(--paper-dim); transition: color 0.2s ease; }
+.disc-foot a:hover { color: var(--ember); }
+
+@media (max-width: 600px) {
+  .disc-head, .disc-row { grid-template-columns: 1fr; gap: 4px; }
+  .disc-head span:nth-child(3) { display: none; }
+}

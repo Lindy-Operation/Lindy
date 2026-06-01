@@ -1,0 +1,90 @@
+.deck-root {
+  position: fixed;
+  inset: 0;
+  background: #0a0a0a;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+/* fixed design-size canvas, scaled to fit the viewport */
+.deck-canvas {
+  position: relative;
+  transform-origin: center center;
+  flex: none;
+}
+
+.deck-slide {
+  position: absolute;
+  inset: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .28s ease;
+}
+.deck-slide[data-active='true'] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* each slide root section fills the canvas */
+.deck-slide > section {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* bottom-center counter + hint, fades on idle */
+.deck-hint {
+  position: fixed;
+  left: 50%;
+  bottom: 22px;
+  transform: translateX(-50%);
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 9px 18px;
+  border-radius: 999px;
+  background: rgba(14, 20, 28, .72);
+  backdrop-filter: blur(8px);
+  color: #fbfaf6;
+  font-size: 14px;
+  letter-spacing: .12em;
+  opacity: 0;
+  transition: opacity .4s ease;
+  pointer-events: none;
+}
+.deck-hint[data-visible='true'] {
+  opacity: 1;
+}
+.deck-hint .mono {
+  font-family: var(--mono);
+}
+.deck-hint-keys {
+  opacity: .5;
+  font-size: 12px;
+}
+
+/* back-to-site link, top-left of the deck */
+.bb-exit {
+  position: fixed;
+  left: 18px;
+  top: 16px;
+  z-index: 20;
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: .08em;
+  color: #fbfaf6;
+  opacity: .42;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: rgba(14, 20, 28, .55);
+  backdrop-filter: blur(8px);
+  transition: opacity .2s ease;
+}
+.bb-exit:hover {
+  opacity: 1;
+}

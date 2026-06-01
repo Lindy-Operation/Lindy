@@ -1,0 +1,64 @@
+/* Brand book slide styles — ported verbatim from "lindy Brand Book.html",
+   scoped under .bb so they only apply inside the deck. Tokens live in
+   global.css. Slides are authored at 1920×1080 and scaled by <Deck>. */
+
+/* ---- slide base ---- */
+.bb section { font-family: var(--sans); color: var(--ink); background: var(--paper); overflow: hidden; }
+.bb section.pine { background: var(--pine); color: var(--bone); }
+.bb section.ink { background: var(--pineDk); color: var(--bone); }
+.bb .frame { position: absolute; inset: 0; padding: 104px 132px; display: flex; flex-direction: column; }
+
+/* ---- type ---- */
+.bb .kicker { font-family: var(--mono); font-size: 21px; font-weight: 500; letter-spacing: .24em; text-transform: uppercase; opacity: .5; }
+.bb .pine .kicker, .bb .ink .kicker { opacity: .65; }
+.bb .h1 { font-size: 128px; font-weight: 600; letter-spacing: -.045em; line-height: .92; }
+.bb .h2 { font-size: 88px; font-weight: 600; letter-spacing: -.04em; line-height: .96; }
+.bb .h3 { font-size: 52px; font-weight: 600; letter-spacing: -.03em; line-height: 1.04; }
+.bb .lead { font-size: 34px; font-weight: 400; line-height: 1.45; letter-spacing: -.01em; }
+.bb .body { font-size: 25px; font-weight: 400; line-height: 1.55; }
+.bb .small { font-size: 21px; line-height: 1.5; }
+.bb .mono { font-family: var(--mono); }
+.bb .dim { opacity: .6; }
+.bb .dimmer { opacity: .42; }
+.bb .ember { color: var(--ember); }
+.bb .gold { color: var(--gold); }
+.bb .wm { font-weight: 600; letter-spacing: -.03em; line-height: .82; }
+.bb .sub { font-weight: 500; letter-spacing: .08em; text-transform: none; }
+
+/* ---- layout helpers ---- */
+.bb .row { display: flex; }
+.bb .col { display: flex; flex-direction: column; }
+.bb .between { justify-content: space-between; }
+.bb .center { align-items: center; justify-content: center; }
+.bb .grow { flex: 1; }
+.bb .gap { gap: 48px; }
+.bb .topbar { display: flex; justify-content: space-between; align-items: center; }
+.bb .pageno { position: absolute; right: 132px; bottom: 84px; font-family: var(--mono); font-size: 19px; letter-spacing: .18em; opacity: .4; }
+.bb .hr { height: 1px; background: var(--line); width: 100%; }
+.bb .pine .hr, .bb .ink .hr { background: #fbfaf622; }
+
+/* ---- mark ---- */
+.bb .mark { color: var(--pine); }
+.bb .pine .mark, .bb .ink .mark { color: var(--bone); }
+
+/* lockup */
+.bb .lock { display: inline-flex; align-items: center; }
+.bb .lock .mark { flex: none; }
+.bb .lockstack { display: inline-flex; flex-direction: column; align-items: center; }
+
+/* swatch */
+.bb .sw { border-radius: 14px; overflow: hidden; border: 1px solid var(--line); display: flex; flex-direction: column; }
+.bb .sw .chip { flex: 1; }
+.bb .sw .meta { background: #fff; padding: 18px 20px; }
+.bb .sw .nm { font-size: 23px; font-weight: 600; }
+.bb .sw .hx { font-family: var(--mono); font-size: 18px; opacity: .5; margin-top: 4px; }
+
+/* placeholder */
+.bb .ph { background: repeating-linear-gradient(135deg, #0e171410 0 2px, transparent 2px 13px), var(--bone); display: flex; align-items: center; justify-content: center; color: var(--ink); }
+.bb .ph .pl { font-family: var(--mono); font-size: 18px; letter-spacing: .12em; text-transform: uppercase; opacity: .5; }
+.bb .pine .ph, .bb .ink .ph { background: repeating-linear-gradient(135deg, #fbfaf618 0 2px, transparent 2px 13px), #ffffff0d; color: var(--bone); }
+
+.bb .tag { display: inline-flex; align-items: center; gap: 10px; font-family: var(--mono); font-size: 17px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; padding: 7px 13px; border-radius: 6px; }
+.bb .device { border-radius: 30px; background: #fff; box-shadow: 0 30px 80px rgba(10, 30, 24, .18); overflow: hidden; }
+.bb .browser { border-radius: 16px; overflow: hidden; box-shadow: 0 30px 90px rgba(10, 30, 24, .22); background: #fff; }
+.bb .dot { width: 13px; height: 13px; border-radius: 50%; }
