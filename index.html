@@ -10,9 +10,23 @@
       content="Lindy Operation is a cashflow company that operates a portfolio of durable businesses — built to endure and compound over time. Be the fire the wind can't blow out."
     />
     <meta name="author" content="Lindy Operation Inc." />
+    <meta
+      name="keywords"
+      content="Lindy, Lindy Operation, Lindy Operation Inc, 린디, 린디오퍼레이션, 린디 오퍼레이션, 주식회사 린디 오퍼레이션, cashflow company, antifragile, Lindy effect, Daehun Lee"
+    />
     <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow, max-image-preview:large" />
     <meta name="theme-color" content="#14100c" />
     <link rel="canonical" href="https://lindyoperation.com/" />
+
+    <!-- Search-engine ownership verification — paste the codes from each console, then uncomment.
+         Google Search Console:  https://search.google.com/search-console
+         Naver Search Advisor:   https://searchadvisor.naver.com
+         Bing Webmaster Tools:   https://www.bing.com/webmasters
+    <meta name="google-site-verification" content="PASTE_GOOGLE_CODE" />
+    <meta name="naver-site-verification" content="PASTE_NAVER_CODE" />
+    <meta name="msvalidate.01" content="PASTE_BING_CODE" />
+    -->
 
     <!-- icons -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -58,17 +72,40 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Lindy Operation",
-        "legalName": "Lindy Operation Inc.",
-        "url": "https://lindyoperation.com",
-        "logo": "https://lindyoperation.com/og.png",
-        "image": "https://lindyoperation.com/og.png",
-        "email": "danny@lindyoperation.com",
-        "foundingDate": "2026",
-        "founder": { "@type": "Person", "name": "Daehun Lee" },
-        "slogan": "Be the fire.",
-        "description": "A cashflow company that operates a portfolio of durable businesses — built to endure and compound over time."
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://lindyoperation.com/#organization",
+            "name": "Lindy Operation",
+            "legalName": "Lindy Operation Inc.",
+            "alternateName": [
+              "Lindy",
+              "린디",
+              "린디오퍼레이션",
+              "린디 오퍼레이션",
+              "주식회사 린디 오퍼레이션",
+              "Lindy Operation Inc."
+            ],
+            "url": "https://lindyoperation.com",
+            "logo": "https://lindyoperation.com/og.png",
+            "image": "https://lindyoperation.com/og.png",
+            "email": "danny@lindyoperation.com",
+            "foundingDate": "2026",
+            "founder": { "@type": "Person", "name": "Daehun Lee" },
+            "slogan": "Be the fire.",
+            "description": "A cashflow company that operates a portfolio of durable businesses — built to endure and compound over time.",
+            "sameAs": ["https://github.com/Lindy-Operation"]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://lindyoperation.com/#website",
+            "name": "Lindy Operation",
+            "alternateName": ["Lindy", "린디", "린디 오퍼레이션"],
+            "url": "https://lindyoperation.com",
+            "inLanguage": ["en", "ko"],
+            "publisher": { "@id": "https://lindyoperation.com/#organization" }
+          }
+        ]
       }
     </script>
   </head>
