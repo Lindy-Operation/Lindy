@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="glowTR" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ec5a2a" stop-opacity="0.45"/>
+      <stop offset="60%" stop-color="#ec5a2a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="flameGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ec5a2a" stop-opacity="0.55"/>
+      <stop offset="65%" stop-color="#ec5a2a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- warm near-black field -->
+  <rect width="1200" height="630" fill="#14100c"/>
+  <ellipse cx="1010" cy="120" rx="520" ry="420" fill="url(#glowTR)"/>
+
+  <!-- big flame, glowing, right side -->
+  <ellipse cx="965" cy="320" rx="300" ry="300" fill="url(#flameGlow)"/>
+  <g transform="translate(800,150) scale(3.3)">
+    <path fill="#ff7a3b" fill-rule="evenodd" d="M54 14 C 50 33 70 41 70 60 A 22 22 0 0 1 26 60 C 26 47 33 41 39 31 C 40 41 45 46 50 47 C 52 38 50 25 54 14 Z M50 47 C 44 50 41 56 44 63 C 38 60 36 53 39 46 C 43 39 49 39 50 47 Z"/>
+  </g>
+
+  <!-- wordmark lockup, top-left -->
+  <g transform="translate(78,72) scale(0.46)">
+    <path fill="#ff7a3b" fill-rule="evenodd" d="M54 14 C 50 33 70 41 70 60 A 22 22 0 0 1 26 60 C 26 47 33 41 39 31 C 40 41 45 46 50 47 C 52 38 50 25 54 14 Z M50 47 C 44 50 41 56 44 63 C 38 60 36 53 39 46 C 43 39 49 39 50 47 Z"/>
+  </g>
+  <text x="116" y="108" font-family="'Geist','Helvetica Neue',Arial,sans-serif" font-size="40" font-weight="700" letter-spacing="-1" fill="#f3ecdf">Lindy</text>
+
+  <!-- headline -->
+  <g font-family="'Geist','Helvetica Neue',Arial,sans-serif" font-weight="700" letter-spacing="-3">
+    <text x="76" y="312" font-size="86" fill="#f3ecdf">Be the fire</text>
+    <text x="76" y="404" font-size="86" fill="#f3ecdf">the wind <tspan fill="#ec5a2a" font-style="italic">can't</tspan></text>
+    <text x="76" y="496" font-size="86" fill="#f3ecdf">blow out.</text>
+  </g>
+
+  <!-- footer line -->
+  <text x="78" y="572" font-family="'Geist Mono','SF Mono',ui-monospace,monospace" font-size="24" letter-spacing="1" fill="#9c948a">lindyoperation.com · a cashflow company</text>
+</svg>

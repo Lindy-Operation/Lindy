@@ -5,6 +5,22 @@ import './Landing.css'
 // endurance bars — survival begets survival (the Lindy curve)
 const TICKS = [12, 16, 15, 22, 26, 24, 33, 40, 38, 50, 62, 60, 78, 96, 100]
 
+// smooth exponential curve drawn over the bars (e^kt, normalised to the box)
+const CURVE = (() => {
+  const K = 3.4
+  const N = 64
+  const denom = Math.exp(K) - 1
+  let d = ''
+  for (let i = 0; i <= N; i++) {
+    const t = i / N
+    const v = (Math.exp(K * t) - 1) / denom // 0 → 1
+    const x = (t * 100).toFixed(2)
+    const y = (100 - v * 100).toFixed(2) // SVG y is inverted
+    d += `${i === 0 ? 'M' : 'L'}${x} ${y} `
+  }
+  return d.trim()
+})()
+
 export default function Landing() {
   return (
     <div className="lp">
@@ -47,10 +63,6 @@ export default function Landing() {
       {/* ============ ENDURANCE ============ */}
       <section className="band" id="why">
         <div className="wrap">
-          <div className="band-head">
-            <span className="idx">01</span>
-            <span className="ttl">Why we last</span>
-          </div>
           <div className="endure">
             <div>
               <h2>The longer it lasts,<br />the longer it <span className="ital ember">will</span> last.</h2>
@@ -60,10 +72,15 @@ export default function Landing() {
               </p>
             </div>
             <div>
-              <div className="ticks">
-                {TICKS.map((h, i) => (
-                  <i key={i} style={{ height: `${h}%`, animationDelay: `${i * 0.05}s` }} />
-                ))}
+              <div className="ticks-wrap">
+                <div className="ticks">
+                  {TICKS.map((h, i) => (
+                    <i key={i} style={{ height: `${h}%`, animationDelay: `${i * 0.05}s` }} />
+                  ))}
+                </div>
+                <svg className="ticks-curve" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+                  <path d={CURVE} fill="none" vectorEffect="non-scaling-stroke" />
+                </svg>
               </div>
               <div className="scale-row">
                 <span>2026</span>
@@ -81,7 +98,6 @@ export default function Landing() {
           <Spark className="glow" />
           <h2>Be the <span className="ember ital">fire.</span></h2>
           <a className="mail" href="mailto:danny@lindyoperation.com">danny@lindyoperation.com</a>
-          <div className="sub">Daehun Lee · Lindy Operation</div>
         </div>
       </section>
 
@@ -95,8 +111,6 @@ export default function Landing() {
           <div className="fmeta">© 2026 Lindy Operation Inc.</div>
           <div className="fmeta fmeta-links">
             <Link to="/disclosure">전자공시</Link>
-            <span className="fdot">·</span>
-            <a href="mailto:danny@lindyoperation.com">danny@lindyoperation.com</a>
           </div>
         </div>
       </footer>
