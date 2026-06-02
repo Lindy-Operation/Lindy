@@ -298,3 +298,14 @@
 /* email stays literal lowercase — only the © line / labels are uppercased */
 .lp footer .fmeta-links a[href^="mailto:"] { text-transform: none; color: var(--paper); }
 .lp footer .fmeta-links a { color: var(--paper); }
+.lp footer .flegal {
+  flex-basis: 100%;
+  margin-top: 18px; padding-top: 18px;
+  border-top: 1px solid var(--hair-soft);
+  display: flex; flex-wrap: wrap; align-items: center; gap: 8px;
+  font-family: var(--mono); font-size: 11px; letter-spacing: 0.04em;
+  color: var(--paper-faint);
+}
+.lp footer .flegal .fdot { opacity: 0.4; }
+.lp footer .flegal a { color: var(--paper-dim); transition: color 0.2s ease; }
+.lp footer .flegal a:hover { color: var(--ember); }

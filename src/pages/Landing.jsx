@@ -112,6 +112,15 @@ export default function Landing() {
           <div className="fmeta fmeta-links">
             <Link to="/disclosure">전자공시</Link>
           </div>
+          <div className="flegal">
+            <span>Lindy Operation Inc.</span>
+            <span className="fdot">·</span>
+            <span>Representative: Daehun Lee</span>
+            <span className="fdot">·</span>
+            <span>Business Registration No. 193-87-03843</span>
+            <span className="fdot">·</span>
+            <a href="mailto:danny@lindyoperation.com">danny@lindyoperation.com</a>
+          </div>
         </div>
       </footer>
     </div>
