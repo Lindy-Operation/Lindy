@@ -104,23 +104,20 @@ export default function Landing() {
       {/* ============ FOOTER ============ */}
       <footer>
         <div className="wrap">
-          <div className="ftop">
-            <div className="fbrand">
-              <Spark />
-              <span className="name">Lindy</span>
-            </div>
-            <nav className="flinks">
-              <Link to="/disclosure">전자공시</Link>
-              <span className="fdot">·</span>
-              <a href="mailto:danny@lindyoperation.com">danny@lindyoperation.com</a>
-            </nav>
+          <div className="fbrand">
+            <Spark />
+            <span className="name">Lindy</span>
           </div>
-          <div className="flegal">
+          <div className="fmeta">
             <span>© 2026 Lindy Operation Inc.</span>
             <span className="fdot">·</span>
             <span>Representative: Daehun Lee</span>
             <span className="fdot">·</span>
             <span>Business Registration No. 193-87-03843</span>
+            <span className="fdot">·</span>
+            <Link to="/disclosure">전자공시</Link>
+            <span className="fdot">·</span>
+            <a href="mailto:danny@lindyoperation.com">danny@lindyoperation.com</a>
           </div>
         </div>
       </footer>
