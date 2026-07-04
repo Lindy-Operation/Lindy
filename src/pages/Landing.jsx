@@ -36,6 +36,7 @@ export default function Landing() {
           </a>
           <nav className="nav-links">
             <Link className="lnk" to="/brand">Brand</Link>
+            <a className="lnk" href="https://studio.lindyoperation.com">Studio</a>
             <a className="nav-cta" href="#contact">Get in touch</a>
           </nav>
         </div>
@@ -116,6 +117,8 @@ export default function Landing() {
             <span>Business Registration No. 193-87-03843</span>
             <span className="fdot">·</span>
             <Link to="/disclosure">전자공시</Link>
+            <span className="fdot">·</span>
+            <a href="https://studio.lindyoperation.com">Lindy Studio</a>
             <span className="fdot">·</span>
             <a href="mailto:danny@lindyoperation.com">danny@lindyoperation.com</a>
           </div>
