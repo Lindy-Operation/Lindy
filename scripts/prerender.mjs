@@ -11,7 +11,13 @@ import { fileURLToPath, pathToFileURL } from 'node:url'
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const dist = path.resolve(__dirname, '../dist')
 const ssrEntry = path.resolve(__dirname, '../dist-ssr/entry-server.js')
-const ROUTES = ['/', '/brand', '/disclosure']
+
+// 법무 문서 경로(허브 + 언어별 현행본 + 모든 보관본)는 레지스트리에서 생성한다.
+// 제품이나 개정 버전이 늘어나도 이 파일은 건드릴 필요가 없다.
+const { allLegalRoutes } = await import(
+  pathToFileURL(path.resolve(__dirname, '../src/legal/registry.js')).href
+)
+const ROUTES = ['/', '/brand', '/disclosure', ...allLegalRoutes()]
 
 const { render } = await import(pathToFileURL(ssrEntry).href)
 const template = await readFile(path.join(dist, 'index.html'), 'utf8')

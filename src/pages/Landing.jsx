@@ -118,6 +118,8 @@ export default function Landing() {
             <span className="fdot">·</span>
             <Link to="/disclosure">전자공시</Link>
             <span className="fdot">·</span>
+            <Link to="/legal">이용약관</Link>
+            <span className="fdot">·</span>
             <a href="https://studio.lindyoperation.com">Lindy Studio</a>
             <span className="fdot">·</span>
             <a href="mailto:danny@lindyoperation.com">danny@lindyoperation.com</a>
