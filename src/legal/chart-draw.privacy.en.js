@@ -2,6 +2,8 @@
 // ⚠️ Never edit the body of a version that has taken effect — it is an archived record.
 // ⚠️ This document must match what the code actually does. Declaring data you do not
 //    collect creates a mismatch with the Play Data Safety form and Apple's privacy label.
+//    (Exception: corrections before launch while zero users are bound. Not after.)
+// Payments are out of scope for v1.0. Add collection/retention clauses in v1.1 when they ship.
 
 const V1_0 = `
 Lindy Operation Inc. (the "Company") complies with the Personal Information Protection Act
@@ -27,7 +29,7 @@ handles personal data of users of Chart Draw (the "Service").
 Service without creating an account, the Company collects no personal data whatsoever, and
 your learning records are stored solely on your device.
 
-③ Personal data is collected **only when you create an account or purchase a Paid Service**.
+③ Personal data is collected **only when you create an account**. The Service contains no payment functionality.
 
 ## Article 2 (Personal Data Collected)
 
@@ -47,15 +49,7 @@ your learning records are stored solely on your device.
 - Learning records: quiz results, number of attempts, scores, accuracy rate, participation
   dates
 
-③ On purchase of a Paid Service
-
-- Transaction details: product name, payment date and time, amount, and the transaction
-  identifier issued by the store
-- The Company **does not collect payment instrument details such as card or account
-  numbers.** Payments are processed through in-app purchase on the Apple App Store or
-  Google Play, and payment instrument data is handled by the respective store operator.
-
-④ The Company does not collect advertising identifiers, location data, contacts, photos, or
+③ The Company does not collect advertising identifiers, location data, contacts, photos, or
 call logs, and does not include third-party advertising or analytics SDKs in the Service.
 
 ## Article 3 (Purposes of Processing)
@@ -64,28 +58,20 @@ call logs, and does not include third-party advertising or analytics SDKs in the
 |---|---|
 | Member identification and session maintenance | Email address, social account identifier |
 | Storing and synchronizing learning records across devices | Learning records, social account identifier |
-| Providing Paid Services, confirming payment, processing refunds | Transaction details, email address |
-| Responding to inquiries and handling disputes | Email address, transaction details |
-| Complying with statutory obligations | Payment and contract records |
+| Responding to inquiries and handling disputes | Email address |
 
 The Company does not use personal data for purposes other than those listed above. Where a
 purpose changes, separate consent will be obtained.
 
 ## Article 4 (Retention Period)
 
-① As a rule, the Company retains personal data **until the Member withdraws** and deletes it
-without undue delay upon withdrawal.
+① The Company retains personal data **until the Member withdraws** and deletes it without
+undue delay upon withdrawal.
 
-② However, the following records are retained for the periods prescribed by law.
-
-| Records retained | Legal basis | Period |
-|---|---|---|
-| Records on contracts or withdrawal of subscription | Act on Consumer Protection in Electronic Commerce | 5 years |
-| Records on payment and supply of goods | Act on Consumer Protection in Electronic Commerce | 5 years |
-| Records on consumer complaints or dispute resolution | Act on Consumer Protection in Electronic Commerce | 3 years |
-
-③ Records retained under Paragraph 2 are used solely for that retention purpose and are
-stored and managed separately from other personal data.
+② Because the Service contains no payment functionality, there are no transaction records
+retained separately under the Act on Consumer Protection in Electronic Commerce. If payment
+functionality is introduced in the future, the items and retention periods required by that
+Act will be stated in this Policy before such functionality takes effect.
 
 ## Article 5 (Provision to Third Parties)
 
