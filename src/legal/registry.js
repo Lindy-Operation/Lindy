@@ -21,7 +21,7 @@ export const KIND = {
 export const PRODUCTS = [
   {
     slug: 'chart-draw',
-    name: { ko: '차트드로우', en: 'Chart Draw' },
+    name: { ko: 'ChartDraw', en: 'ChartDraw' },
     tagline: {
       ko: '차트 패턴 학습 게임',
       en: 'A chart-pattern learning game',
