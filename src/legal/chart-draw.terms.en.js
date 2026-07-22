@@ -131,7 +131,7 @@ third party, the Member must immediately notify the Company and follow its instr
 ③ The Company is liable for damage arising from its failure to take necessary measures
 after receiving a notice under Paragraph 2.
 
-## Article 7 (Withdrawal and Restriction of Use)
+## Article 7 (Termination of the Agreement and Restriction of Use)
 
 ① A Member may request account deletion at any time through a function provided within
 the Service. The Company will delete the Member's personal data and Learning Records
@@ -201,13 +201,22 @@ monetary reward or prize in connection with it. Because the Service's questions 
 answers are distributed within the application, the Company does not warrant that every
 user's score accurately reflects their ability.
 
-⑧ The Company may restrict a Member's participation in the ranking in the following cases.
-In such cases the Company shall notify the Member of the reason and scope of the
-restriction, and the Member may object to it.
+⑧ The Company may restrict a Member's participation in the ranking in the following cases:
 
-- Submitting or attempting to submit a score by improper means
+- Transmitting a score through a channel the Service does not provide, or creating a record
+  without actually solving the questions
 - Creating multiple accounts for the purpose of participating in the ranking
 - Accessing the ranking feature by automated means
+
+⑨ A restriction under Paragraph 8 follows this procedure:
+
+- The Company **shall** display the reason and scope of the restriction to the Member within
+  the Service.
+- The restriction applies to ranking participation only; use of the learning features is not
+  restricted.
+- The Member may object by writing to danny@lindyoperation.com, and the Company shall notify
+  the Member of the outcome of its review **within 10 days**. Where the objection is
+  well-founded, the Company shall lift the restriction without undue delay.
 
 ## Article 10 (Content and Data Sources)
 
@@ -244,7 +253,11 @@ Copyright Act. Users may not reproduce, distribute, or transmit it, or repeatedl
 systematically extract a substantial part of the database, without the Company's prior
 written consent.
 
-③ Users may use the Service for personal, non-commercial purposes only.
+③ Paragraphs 1 and 2 do not assert any right in the public data itself as released by the
+issuing authority. The Company's rights extend only to what the Company selected, compiled,
+and annotated.
+
+④ Users may use the Service for personal, non-commercial purposes only.
 
 ## Article 13 (User Obligations)
 
@@ -252,7 +265,7 @@ Users must not:
 
 - Reverse engineer, decompile, or disassemble the Service, or extract its source code
 - Access the Service by automated means or harvest data in bulk
-- Reproduce, distribute, or commercially exploit the Service's content without permission
+- Reproduce and distribute, or commercially exploit, the Service's content without permission
 - Misappropriate or improperly use another person's account
 - Submit Daily Ranking scores by improper means, or create multiple accounts for the
   purpose of participating in the ranking
@@ -263,7 +276,7 @@ Users must not:
 
 ① The Company is relieved of liability where it cannot provide the Service due to causes
 beyond its reasonable control, such as natural disaster, war, power failure, or an
-interruption of telecommunications services.
+interruption of services by a telecommunications carrier.
 
 ② The Company is not liable for service disruptions attributable to the user.
 
@@ -276,8 +289,8 @@ limited under applicable law.
 
 ## Article 15 (Dispute Resolution)
 
-① The Company and users will seek to resolve disputes arising from use of the Service
-through good-faith consultation.
+① The Company and users shall resolve disputes arising from use of the Service through
+good-faith consultation.
 
 ② Where consultation fails, any action shall be brought before the court having
 jurisdiction under the Korean Civil Procedure Act.

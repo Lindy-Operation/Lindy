@@ -63,7 +63,6 @@ device are transferred to and merged into that account's records on our servers.
   the Daily Ranking. Users cannot enter or change it, and it does not reveal a real name or
   email address. However, because it is linked to a Member's account, it constitutes
   personal data and is protected under this Policy.
-- Ranking records may also store the time taken to complete the questions and the app version.
 
 ③ Automatically generated and collected information
 
@@ -109,9 +108,14 @@ they are no longer shown to other users.
 ## Article 4 (Retention Period)
 
 ① The Company retains personal data **until the Member withdraws** and deletes it without
-undue delay upon withdrawal. Daily Ranking records are destroyed at the same time.
+undue delay upon withdrawal.
 
-② Because the Service contains no payment functionality, there are no transaction records
+② Daily Ranking records are used to display rankings for **30 days** from the date of entry.
+After 30 days they are no longer shown to other users and are used only to detect improper
+participation and to handle disputes. A Member may request deletion of ranking records at any
+time under Article 8, and they are destroyed on withdrawal.
+
+③ Because the Service contains no payment functionality, there are no transaction records
 retained separately under the Act on Consumer Protection in Electronic Commerce. If payment
 functionality is introduced in the future, the items and retention periods required by that
 Act will be stated in this Policy before such functionality takes effect.
@@ -136,8 +140,11 @@ The Company outsources the processing of personal data as follows.
 |---|---|---|
 | Supabase, Inc. | Operation of database and authentication infrastructure | Until termination of the outsourcing agreement or destruction of the personal data |
 
-- The processor's facilities are located in the **Seoul region, Republic of Korea**, and
-  personal data is **not transferred overseas**.
+- The facilities where personal data is stored and processed are located in the **Seoul
+  region, Republic of Korea**. However, the processor is a US company, and personnel located
+  outside Korea may access those facilities to the extent necessary to perform the outsourced
+  work, such as incident response. Even then, processing is limited to that outsourced work,
+  and the Company restricts this by contract.
 - The Company reflects safeguards for the secure handling of personal data in the
   outsourcing agreement and supervises the processor's compliance.
 
@@ -208,6 +215,20 @@ following bodies.
 | Privacy Infringement Report Center | 118 (privacy.kisa.or.kr) |
 | Supreme Prosecutors' Office, Cybercrime Division | 1301 (spo.go.kr) |
 | National Police Agency, Cyber Bureau | 182 (ecrm.police.go.kr) |
+
+## Article 12-2 (Use of Device Storage and How to Refuse)
+
+① The Service uses no cookies or tracking tools for advertising or analytics.
+
+② However, the following two items are kept in your device's storage.
+
+| Stored item | Purpose | How to delete |
+|---|---|---|
+| Learning records and settings | So you can continue without an account | [Settings > Reset records] within the Service, or delete the app |
+| Sign-in session | To keep you signed in | [Settings > Sign out] within the Service, or delete the app |
+
+③ This information is not transmitted to the Company's servers (except for the synchronization
+of learning records when you sign in), and you may delete it at any time by the means above.
 
 ## Article 13 (Changes to this Policy)
 
