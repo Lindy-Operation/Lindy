@@ -13,7 +13,7 @@ export default function Legal() {
       <header className="legal-nav">
         <Link className="brand" to="/">
           <Spark />
-          <span className="name">Lindy</span>
+          <span className="name">Lindy Operation Inc.</span>
         </Link>
         <Link className="legal-back mono" to="/">← 홈으로</Link>
       </header>

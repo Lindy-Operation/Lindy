@@ -32,7 +32,7 @@ export default function Landing() {
         <div className="wrap nav">
           <a className="brand" href="#top">
             <Spark className="glow" />
-            <span className="name">Lindy</span>
+            <span className="name">Lindy Operation Inc.</span>
           </a>
           <nav className="nav-links">
             <a className="lnk" href="https://z2o.kr">Zero to One</a>
@@ -108,7 +108,7 @@ export default function Landing() {
         <div className="wrap">
           <div className="fbrand">
             <Spark />
-            <span className="name">Lindy</span>
+            <span className="name">Lindy Operation Inc.</span>
           </div>
           <div className="fmeta">
             <span>© 2026 Lindy Operation Inc.</span>

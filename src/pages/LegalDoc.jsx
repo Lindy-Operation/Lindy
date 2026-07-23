@@ -66,7 +66,7 @@ export default function LegalDoc({ lang = 'ko' }) {
     return (
       <div className="lp legal">
         <header className="legal-nav">
-          <Link className="brand" to="/"><Spark /><span className="name">Lindy</span></Link>
+          <Link className="brand" to="/"><Spark /><span className="name">Lindy Operation Inc.</span></Link>
           <Link className="legal-back mono" to="/legal">{t.back}</Link>
         </header>
         <main className="legal-main">
@@ -88,7 +88,7 @@ export default function LegalDoc({ lang = 'ko' }) {
     return (
       <div className="lp legal">
         <header className="legal-nav">
-          <Link className="brand" to="/"><Spark /><span className="name">Lindy</span></Link>
+          <Link className="brand" to="/"><Spark /><span className="name">Lindy Operation Inc.</span></Link>
           <Link className="legal-back mono" to={docPath(slug, kind, lang)}>{t.back}</Link>
         </header>
         <main className="legal-main">
@@ -107,7 +107,7 @@ export default function LegalDoc({ lang = 'ko' }) {
       <header className="legal-nav">
         <Link className="brand" to="/">
           <Spark />
-          <span className="name">Lindy</span>
+          <span className="name">Lindy Operation Inc.</span>
         </Link>
         <span className="legal-navlinks mono">
           <Link className="legal-back" to={docPath(slug, kind, otherLang)}>{t.other}</Link>
