@@ -37,6 +37,7 @@ export default function Landing() {
           <nav className="nav-links">
             <a className="lnk" href="https://z2o.kr">Zero to One</a>
             <a className="lnk" href="https://studio.lindyoperation.com">Studio</a>
+            <a className="lnk" href="/chartdraw/">ChartDraw</a>
             <a className="nav-cta" href="#contact">Get in touch</a>
           </nav>
         </div>
