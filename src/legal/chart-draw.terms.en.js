@@ -113,9 +113,13 @@ uses the Service, at which point the user is deemed to have accepted these Terms
 ② For Members, the agreement is formed when the user accepts these Terms, applies to
 create an account, and the Company approves the application.
 
-③ The Company may refuse an application, or subsequently terminate the agreement, in any
+③ Users under 14 years of age may not apply for membership. The Company verifies age
+before account creation.
+
+④ The Company may refuse an application, or subsequently terminate the agreement, in any
 of the following cases:
 
+- The applicant is confirmed to be under 14 years of age
 - The applicant has used another person's name or information
 - The applicant has previously been restricted for violating these Terms
 - The application is clearly intended to interfere with the normal operation of the

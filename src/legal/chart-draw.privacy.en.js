@@ -51,6 +51,10 @@ device are transferred to and merged into that account's records on our servers.
 
 - If you sign in with Apple and choose **Hide My Email**, the Company receives the relay
   address issued by Apple rather than your actual email address.
+- If you sign in with Apple, the Company collects and retains an authentication token
+  issued by Apple until account deletion, solely to revoke the connection to your Apple
+  account when you delete your account. The token is destroyed upon deletion and is not
+  used for any other purpose.
 - The Company does not collect passwords for social services.
 
 ② Data generated through use of the Service
