@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ChartDraw — 차트만 보고 패턴을 맞히는 학습 게임</title>
+    <meta
+      name="description"
+      content="차트의 앞부분만 보고 다음에 올 패턴을 맞히는 학습 게임. 전부 실제 과거 차트이고, 맞히면 그 뒤가 그려집니다."
+    />
+    <style>
+      :root { color-scheme: dark; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        font-family: -apple-system, "Apple SD Gothic Neo", "Pretendard", sans-serif;
+        background: #07080a; color: #fbfaf6; line-height: 1.7;
+      }
+      .wrap { max-width: 640px; margin: 0 auto; padding: 72px 22px 90px; }
+      .brand { color: #cbfb45; font-weight: 800; letter-spacing: 4px; font-size: 13px; }
+      h1 { font-size: 34px; line-height: 1.3; margin: 14px 0 18px; }
+      .sub { color: #aeb9c6; font-size: 16px; }
+      h2 { font-size: 18px; margin: 44px 0 10px; }
+      p, li { color: #dfe6ee; font-size: 15px; }
+      ul { margin-left: 20px; }
+      li { margin-bottom: 6px; }
+      .note {
+        margin-top: 40px; padding: 16px; border-radius: 12px;
+        background: rgba(203, 251, 69, 0.07); border: 1px solid rgba(203, 251, 69, 0.32);
+        font-size: 14px; color: #dfe6ee;
+      }
+      footer { margin-top: 54px; font-size: 13px; color: #8fa3b8; }
+      a { color: #cbfb45; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <p class="brand">ChartDraw</p>
+      <h1>차트만 보고<br />패턴을 맞혀보세요</h1>
+      <p class="sub">
+        차트의 앞부분만 보여드립니다. 다음에 무슨 패턴이 올지 고르면, 그 뒤가 그려지면서 그때 실제로
+        무슨 일이 있었는지 나옵니다.
+      </p>
+
+      <h2>이런 앱입니다</h2>
+      <ul>
+        <li>실제 과거 차트 100문제, 29가지 패턴 (가격 13 + 보조지표 16)</li>
+        <li>오늘의 5문제 — 매일 새로 열리고, 로그인 없이 계속 무료입니다</li>
+        <li>무료 로그인을 하면 전체 문제와 매일 순위·백분위가 열립니다</li>
+        <li>패턴별 정답률과 못 맞힌 문제를 따로 모아 봅니다</li>
+        <li>광고 없음, 결제 없음</li>
+      </ul>
+
+      <h2>다루는 패턴</h2>
+      <p>
+        골든 크로스, 데드 크로스, V자 반등, 더블 바텀, 더블 탑, 박스권 상향 돌파, 박스권 하향 이탈,
+        헤드 앤 숄더, 역 헤드 앤 숄더, 상승 삼각수렴, 하락 삼각수렴, 신고가 돌파, 지지선 반등에
+        볼린저 밴드·RSI·MACD·거래량 기반 지표 패턴 16가지를 더해 다룹니다.
+      </p>
+      <p>
+        패턴 라벨은 눈대중이 아니라 이동평균 교차일·저점 간격·돌파가 같은 실제 계산으로 붙였습니다.
+      </p>
+
+      <h2>데이터 출처</h2>
+      <p>
+        공공데이터포털이 개방한 금융위원회 「주식시세정보」(이용허락범위 제한 없음)를 이용해
+        구성했습니다. 전일 종가 기준 과거 일봉이며, 실시간 시세가 아닙니다.
+      </p>
+
+      <div class="note">
+        ChartDraw의 모든 콘텐츠는 <strong>교육·정보 목적</strong>이며 투자 조언이 아닙니다. 실제 거래
+        기능을 제공하지 않습니다. 과거의 차트 패턴이 미래의 가격을 예측하지 않습니다.
+      </div>
+
+      <footer>
+        <a href="https://lindyoperation.com/legal/chart-draw/terms">이용약관</a> · <a href="https://lindyoperation.com/legal/chart-draw/privacy">개인정보 처리방침</a> · <a href="/chartdraw/support/">지원·문의</a><br />
+        © 2026 주식회사 린디오퍼레이션
+      </footer>
+    </div>
+  </body>
+</html>
